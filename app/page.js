@@ -1,19 +1,19 @@
 const interests = [
-  "Building practical software that helps people work faster",
-  "Learning through side projects and rapid experiments",
-  "Using AI tools as force multipliers for design, writing, and development",
+  "Software that solves real problems instead of just looking impressive",
+  "AI, automation, and product design that make work more efficient",
+  "Learning by building, testing ideas quickly, and improving from feedback",
 ];
 
 const hobbies = [
-  "Exploring new product ideas",
-  "Reading about technology, business, and personal growth",
-  "Spending time refining workflows and systems that make life simpler",
+  "Exploring new tech and trying out tools that sharpen how I work",
+  "Reading about business, growth, and how people build durable careers",
+  "Turning loose ideas into structured plans, systems, and side projects",
 ];
 
 const nextSteps = [
-  "Keep shipping small projects that turn ideas into useful products",
-  "Go deeper on full-stack development and modern AI workflows",
-  "Use this season of time to build a body of work that compounds",
+  "Build stronger full-stack skills by shipping projects end to end",
+  "Invest more time in AI-enabled products and practical automation",
+  "Use this period intentionally to create work, learn fast, and open new opportunities",
 ];
 
 export default function HomePage() {
@@ -22,12 +22,13 @@ export default function HomePage() {
       <section className="hero">
         <p className="eyebrow">Mirant Desai</p>
         <h1>
-          I build, learn, and iterate with a bias toward practical progress.
+          I am focused on building a thoughtful, useful, and ambitious next chapter.
         </h1>
         <p className="lede">
-          This site is a snapshot of what I care about right now: meaningful
-          work, steady skill-building, and creating the next set of
-          opportunities with intention.
+          I am interested in technology, problem-solving, and creating a life
+          where my time goes toward meaningful work. Right now, I am using this
+          space to keep track of what I care about, what I enjoy, and what I
+          want to build next.
         </p>
       </section>
 
@@ -54,7 +55,7 @@ export default function HomePage() {
       <section className="focus card focus-card">
         <div>
           <p className="section-label">What I plan to do next</p>
-          <h2>Use my time on work that creates momentum.</h2>
+          <h2>Spend my time building skills, clarity, and momentum.</h2>
         </div>
         <ol>
           {nextSteps.map((item) => (
