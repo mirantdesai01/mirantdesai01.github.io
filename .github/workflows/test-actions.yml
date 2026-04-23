@@ -1,0 +1,13 @@
+name: Test Actions
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo trigger
+        run: echo "GitHub Actions is running on main"
