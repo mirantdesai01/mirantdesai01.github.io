@@ -18,3 +18,4 @@ npm run build
 The app is configured with `output: "export"` so GitHub Actions can deploy the generated `out/` directory to GitHub Pages.
 
 Last deployment refresh: 2026-04-23
+Latest workflow trigger test: 2026-04-23
