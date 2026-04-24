@@ -4,6 +4,7 @@ const profile = {
   location: "United States",
   url: "https://mirantdesai01.github.io",
   github: "https://github.com/mirantdesai01",
+  medium: "https://medium.com/@desaimirant9",
 };
 
 const focusAreas = [
@@ -27,6 +28,41 @@ const principles = [
   "Fast feedback is the best way to improve both software and strategy.",
 ];
 
+const buildingNotes = [
+  {
+    title: "Product architecture for AI workflows",
+    text: "I am interested in systems where AI is not a novelty layer, but part of the operating model: routing work, shaping analysis, and helping users move from raw inputs to useful decisions.",
+  },
+  {
+    title: "Engineering decisions that scale",
+    text: "My writing and product work often return to the same question: which technical choices make a product easier to operate, debug, extend, and trust as usage grows?",
+  },
+];
+
+const articles = [
+  {
+    title: "Building for Modern AI: Why PlanAI Moved from R Workers to R APIs",
+    href: "https://medium.com/@desaimirant9/building-for-modern-ai-why-planai-moved-from-r-workers-to-r-apis-a94f5d736e8a",
+    description:
+      "A technical product note on moving PlanAI toward API-based R services so AI workflows can become more modular, callable, and production-oriented.",
+    tags: ["PlanAI", "R APIs", "AI architecture"],
+  },
+  {
+    title: "PlanAI's Collaboration Branching Product Feature",
+    href: "https://medium.com/@desaimirant9/planais-collaboration-branching-product-feature-1b2568926f22",
+    description:
+      "A product feature discussion about collaboration branching and how teams can explore, compare, and develop work without losing structure.",
+    tags: ["PlanAI", "Collaboration", "Product design"],
+  },
+  {
+    title: "PlanAI's Serverless API Architecture",
+    href: "https://medium.com/@desaimirant9/planais-serverless-api-architecture-dd60fe601557",
+    description:
+      "A technical architecture note on shaping PlanAI around serverless API patterns for cleaner deployment, scaling, and product integration.",
+    tags: ["PlanAI", "Serverless", "API architecture"],
+  },
+];
+
 const schema = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -37,7 +73,7 @@ const schema = {
     "@type": "PostalAddress",
     addressCountry: "US",
   },
-  sameAs: [profile.github],
+  sameAs: [profile.github, profile.medium],
   knowsAbout: [
     "Artificial intelligence products",
     "Automation",
@@ -73,6 +109,9 @@ export default function HomePage() {
             </a>
             <a className="button" href="#focus">
               Focus Areas
+            </a>
+            <a className="button" href="#writing">
+              Writing
             </a>
           </div>
         </div>
@@ -131,6 +170,46 @@ export default function HomePage() {
             <li key={item}>{item}</li>
           ))}
         </ul>
+      </section>
+
+      <section className="section narrative" aria-labelledby="building-title">
+        <div className="section-heading">
+          <p className="section-label">Current Work</p>
+          <h2 id="building-title">Building product depth around PlanAI and applied AI systems</h2>
+        </div>
+        <div className="narrative-grid">
+          {buildingNotes.map((item) => (
+            <article key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section writing" id="writing" aria-labelledby="writing-title">
+        <div className="section-heading">
+          <p className="section-label">Writing</p>
+          <h2 id="writing-title">Technical notes and product thinking</h2>
+        </div>
+        <div className="article-list">
+          {articles.map((article) => (
+            <article className="article-card" key={article.href}>
+              <div>
+                <p className="article-source">Medium</p>
+                <h3>
+                  <a href={article.href}>{article.title}</a>
+                </h3>
+                <p>{article.description}</p>
+              </div>
+              <ul aria-label={`${article.title} topics`}>
+                {article.tags.map((tag) => (
+                  <li key={tag}>{tag}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
       </section>
     </main>
   );
