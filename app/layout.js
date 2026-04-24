@@ -1,8 +1,55 @@
 import "./globals.css";
 
+const siteUrl = "https://mirantdesai01.github.io";
+
 export const metadata = {
-  title: "Mirant Desai",
-  description: "Personal site for Mirant Desai",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Mirant Desai | AI Product Builder and Software Developer",
+    template: "%s | Mirant Desai",
+  },
+  description:
+    "Mirant Desai builds practical AI, automation, and full-stack software products focused on clear workflows, useful systems, and business impact.",
+  alternates: {
+    canonical: "/",
+  },
+  authors: [{ name: "Mirant Desai", url: siteUrl }],
+  creator: "Mirant Desai",
+  publisher: "Mirant Desai",
+  keywords: [
+    "Mirant Desai",
+    "AI product builder",
+    "software developer",
+    "automation",
+    "full-stack software",
+    "business technology",
+  ],
+  openGraph: {
+    title: "Mirant Desai | AI Product Builder and Software Developer",
+    description:
+      "Personal profile for Mirant Desai, focused on practical AI products, automation, full-stack software, and business systems.",
+    url: siteUrl,
+    siteName: "Mirant Desai",
+    locale: "en_US",
+    type: "profile",
+  },
+  twitter: {
+    card: "summary",
+    title: "Mirant Desai | AI Product Builder and Software Developer",
+    description:
+      "Practical AI, automation, and full-stack software work by Mirant Desai.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   verification: {
     google: "wu2Rg7sElRUMCJdfsQN8aoiVRF2HtPFrtXLdUHJL2hM",
   },
