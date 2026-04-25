@@ -65,21 +65,52 @@ const articles = [
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: profile.name,
-  url: profile.url,
-  jobTitle: profile.title,
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "US",
-  },
-  sameAs: [profile.github, profile.medium],
-  knowsAbout: [
-    "Artificial intelligence products",
-    "Automation",
-    "Full-stack software development",
-    "Business technology",
-    "Product strategy",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": `${profile.url}/#person`,
+      name: profile.name,
+      url: profile.url,
+      jobTitle: profile.title,
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "US",
+      },
+      sameAs: [profile.github, profile.medium],
+      knowsAbout: [
+        "Artificial intelligence products",
+        "Automation",
+        "Full-stack software development",
+        "Business technology",
+        "Product strategy",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${profile.url}/#website`,
+      name: "Mirant Desai",
+      url: profile.url,
+      publisher: {
+        "@id": `${profile.url}/#person`,
+      },
+      inLanguage: "en-US",
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": `${profile.url}/#profile-page`,
+      name: "Mirant Desai official profile",
+      url: profile.url,
+      about: {
+        "@id": `${profile.url}/#person`,
+      },
+      mainEntity: {
+        "@id": `${profile.url}/#person`,
+      },
+      isPartOf: {
+        "@id": `${profile.url}/#website`,
+      },
+      inLanguage: "en-US",
+    },
   ],
 };
 
@@ -95,7 +126,7 @@ export default function HomePage() {
         <div className="hero-copy">
           <p className="eyebrow">{profile.name}</p>
           <h1 id="profile-title">
-            AI product builder focused on practical software and business systems.
+            Mirant Desai builds practical AI products, software, and business systems.
           </h1>
           <p className="lede">
             I build and refine technology products that connect AI, automation,
@@ -139,7 +170,7 @@ export default function HomePage() {
 
       <section className="intro" aria-label="Professional summary">
         <p>
-          My work sits at the intersection of technical execution and business
+          Mirant Desai's work sits at the intersection of technical execution and business
           clarity: identifying practical problems, shaping usable product flows,
           and building systems that make repeated work easier to manage.
         </p>

@@ -4,20 +4,24 @@ const siteUrl = "https://mirantdesai01.github.io";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
+  applicationName: "Mirant Desai",
   title: {
-    default: "Mirant Desai | AI Product Builder and Software Developer",
+    default: "Mirant Desai | Official Profile, AI Product Builder, Software Developer",
     template: "%s | Mirant Desai",
   },
   description:
-    "Mirant Desai builds practical AI, automation, and full-stack software products, with writing on PlanAI, API architecture, and product collaboration systems.",
+    "Official website for Mirant Desai, an AI product builder and software developer focused on practical AI, automation, PlanAI, full-stack software, API architecture, and product collaboration systems.",
   alternates: {
     canonical: "/",
   },
   authors: [{ name: "Mirant Desai", url: siteUrl }],
   creator: "Mirant Desai",
   publisher: "Mirant Desai",
+  category: "personal profile",
   keywords: [
     "Mirant Desai",
+    "Mirant Desai official website",
+    "Mirant Desai profile",
     "AI product builder",
     "software developer",
     "automation",
@@ -27,10 +31,17 @@ export const metadata = {
     "serverless API architecture",
     "AI product strategy",
   ],
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   openGraph: {
-    title: "Mirant Desai | AI Product Builder and Software Developer",
+    title: "Mirant Desai | Official Profile",
     description:
-      "Personal profile for Mirant Desai, focused on practical AI products, PlanAI, automation, full-stack software, and business systems.",
+      "Official profile for Mirant Desai, focused on practical AI products, PlanAI, automation, full-stack software, and business systems.",
     url: siteUrl,
     siteName: "Mirant Desai",
     locale: "en_US",
@@ -38,7 +49,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Mirant Desai | AI Product Builder and Software Developer",
+    title: "Mirant Desai | Official Profile",
     description:
       "Practical AI, PlanAI, automation, and full-stack software work by Mirant Desai.",
   },
@@ -55,6 +66,11 @@ export const metadata = {
   },
   verification: {
     google: "wu2Rg7sElRUMCJdfsQN8aoiVRF2HtPFrtXLdUHJL2hM",
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
 };
 
