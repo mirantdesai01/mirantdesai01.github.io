@@ -41,6 +41,13 @@ const buildingNotes = [
 
 const articles = [
   {
+    title: "The 60-Day Sprint at PlanAI: Building the Product Foundation for EdTech B2C and Enterprise AI",
+    href: "https://medium.com/@desaimirant9/the-60-day-sprint-at-planai-building-the-product-foundation-for-ed-tech-b2c-and-enterprise-ai-af37aedc2021",
+    description:
+      "A detailed account of the 60-day product sprint at PlanAI, covering the engineering decisions, product priorities, and architectural choices made to build a foundation supporting both educational technology and enterprise AI applications.",
+    tags: ["PlanAI", "Product development", "EdTech", "Enterprise AI"],
+  },
+  {
     title: "Building for Modern AI: Why PlanAI Moved from R Workers to R APIs",
     href: "https://medium.com/@desaimirant9/building-for-modern-ai-why-planai-moved-from-r-workers-to-r-apis-a94f5d736e8a",
     description:
