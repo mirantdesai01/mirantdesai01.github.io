@@ -41,16 +41,16 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
+  grid-template-columns: minmax(0, 1fr) 300px;
   gap: 32px;
   align-items: stretch;
-  padding: 48px;
+  padding: 36px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
     linear-gradient(115deg, rgba(255, 255, 255, 0.96), rgba(238, 243, 239, 0.9)),
     var(--surface);
-  box-shadow: var(--shadow);
+  box-shadow: 0 12px 24px rgba(23, 33, 28, 0.08);
 }
 
 .hero-copy {
@@ -79,30 +79,31 @@ p {
 h1 {
   max-width: 780px;
   margin-bottom: 22px;
-  font-size: clamp(3rem, 6vw, 5.9rem);
-  line-height: 0.98;
-  letter-spacing: 0;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
 }
 
 h2 {
   margin-bottom: 0;
-  font-size: clamp(2rem, 3.5vw, 3.4rem);
-  line-height: 1.05;
-  letter-spacing: 0;
+  font-size: clamp(1.5rem, 2.5vw, 2.4rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 h3 {
   margin-bottom: 12px;
-  font-size: 1.24rem;
-  line-height: 1.25;
+  font-size: 1.05rem;
+  line-height: 1.3;
+  font-weight: 700;
 }
 
 .lede {
   max-width: 720px;
   margin-bottom: 28px;
   color: var(--muted);
-  font-size: 1.08rem;
-  line-height: 1.75;
+  font-size: 0.95rem;
+  line-height: 1.65;
 }
 
 .actions {
@@ -113,16 +114,16 @@ h3 {
 
 .button {
   display: inline-flex;
-  min-height: 44px;
+  min-height: 40px;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--line);
   border-radius: 6px;
-  padding: 0 18px;
+  padding: 0 16px;
   background: var(--surface);
   color: var(--accent-strong);
-  font-size: 0.95rem;
-  font-weight: 800;
+  font-size: 0.85rem;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -172,8 +173,9 @@ dt {
 
 dd {
   margin: 0 0 22px;
-  font-weight: 750;
-  line-height: 1.45;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 dd:last-child {
@@ -190,9 +192,9 @@ dd:last-child {
   max-width: 880px;
   margin-bottom: 0;
   color: var(--accent-strong);
-  font-size: clamp(1.35rem, 2.4vw, 2rem);
-  font-weight: 750;
-  line-height: 1.35;
+  font-size: clamp(1.1rem, 1.8vw, 1.55rem);
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .section {
@@ -213,18 +215,19 @@ dd:last-child {
 }
 
 .card {
-  min-height: 230px;
+  min-height: 200px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 24px;
+  padding: 20px;
   background: var(--surface);
-  box-shadow: 0 10px 28px rgba(23, 33, 28, 0.06);
+  box-shadow: 0 6px 16px rgba(23, 33, 28, 0.05);
 }
 
 .card p {
   margin-bottom: 0;
   color: var(--muted);
-  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .split {
@@ -249,9 +252,9 @@ dd:last-child {
   padding: 18px 20px;
   background: var(--surface-muted);
   color: var(--accent-strong);
-  font-size: 1.04rem;
-  font-weight: 750;
-  line-height: 1.45;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .narrative {
@@ -271,14 +274,16 @@ dd:last-child {
 .narrative-grid article {
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 24px;
+  padding: 20px;
   background: linear-gradient(180deg, #ffffff, #f9fbf8);
+  box-shadow: 0 4px 12px rgba(23, 33, 28, 0.04);
 }
 
 .narrative-grid p {
   margin-bottom: 0;
   color: var(--muted);
-  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .writing {
@@ -297,9 +302,9 @@ dd:last-child {
   align-items: start;
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 24px;
+  padding: 20px;
   background: var(--surface);
-  box-shadow: 0 10px 28px rgba(23, 33, 28, 0.05);
+  box-shadow: 0 4px 12px rgba(23, 33, 28, 0.04);
 }
 
 .article-source {
@@ -314,7 +319,7 @@ dd:last-child {
 .article-card h3 {
   max-width: 780px;
   margin-bottom: 10px;
-  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
 }
 
 .article-card h3 a {
@@ -331,7 +336,8 @@ dd:last-child {
   max-width: 780px;
   margin-bottom: 0;
   color: var(--muted);
-  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .article-card ul {
@@ -398,7 +404,7 @@ dd:last-child {
   }
 
   h1 {
-    font-size: clamp(2.45rem, 14vw, 3.4rem);
+    font-size: clamp(1.65rem, 11vw, 2.5rem);
   }
 
   .actions {
