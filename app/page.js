@@ -10,15 +10,15 @@ const profile = {
 const focusAreas = [
   {
     title: "AI-enabled products",
-    text: "Designing practical workflows that use AI to reduce manual work, clarify decisions, and make complex tasks easier to complete.",
+    text: "Engineering AI into core product workflows for decision automation, process optimization, and measurable user value. Integration over novelty.",
   },
   {
     title: "Full-stack software",
-    text: "Building web applications from interface to deployment with an emphasis on reliability, fast iteration, and useful product behavior.",
+    text: "End-to-end product development from architecture through deployment, with focus on code quality, maintainability, and long-term scalability.",
   },
   {
     title: "Business systems",
-    text: "Turning loose ideas into structured tools, operating processes, and experiments that can be tested against real-world needs.",
+    text: "Translating strategic vision into operational systems—tools, processes, and feedback loops designed to validate and scale business models.",
   },
 ];
 
@@ -30,12 +30,12 @@ const principles = [
 
 const buildingNotes = [
   {
-    title: "Product architecture for AI workflows",
-    text: "I am interested in systems where AI is not a novelty layer, but part of the operating model: routing work, shaping analysis, and helping users move from raw inputs to useful decisions.",
+    title: "AI as operational infrastructure",
+    text: "Building systems where AI workflows are foundational, not decorative. Designing for decision routing, analysis shaping, and human-AI interaction at scale.",
   },
   {
-    title: "Engineering decisions that scale",
-    text: "My writing and product work often return to the same question: which technical choices make a product easier to operate, debug, extend, and trust as usage grows?",
+    title: "Technical decisions that matter",
+    text: "How to choose architecture, frameworks, and patterns that improve debuggability, extensibility, and operational reliability as products mature and scale.",
   },
 ];
 
@@ -133,13 +133,10 @@ export default function HomePage() {
         <div className="hero-copy">
           <p className="eyebrow">{profile.name}</p>
           <h1 id="profile-title">
-            Mirant Desai builds practical AI products, software, and business systems.
+            Building practical AI products and scalable software systems
           </h1>
           <p className="lede">
-            I build and refine technology products that connect AI, automation,
-            and full-stack software with clear business outcomes. This site is
-            the canonical profile for Mirant Desai and a concise view of the
-            work I am developing.
+            I specialize in product architecture and engineering execution where AI, automation, and full-stack development drive measurable business impact. This site represents my professional work and core focuses.
           </p>
           <div className="actions" aria-label="Profile links">
             <a className="button primary" href={profile.github}>
@@ -177,16 +174,14 @@ export default function HomePage() {
 
       <section className="intro" aria-label="Professional summary">
         <p>
-          Mirant Desai's work sits at the intersection of technical execution and business
-          clarity: identifying practical problems, shaping usable product flows,
-          and building systems that make repeated work easier to manage.
+          I focus on translating complex technical requirements into streamlined products that solve real business problems. My work bridges product strategy and engineering to create systems that scale with clarity and reliability.
         </p>
       </section>
 
       <section className="section" id="focus">
         <div className="section-heading">
-          <p className="section-label">Focus</p>
-          <h2>Areas where I am building depth</h2>
+          <p className="section-label">Focus Areas</p>
+          <h2>Core expertise and specialization</h2>
         </div>
         <div className="grid">
           {focusAreas.map((item) => (
@@ -212,8 +207,8 @@ export default function HomePage() {
 
       <section className="section narrative" aria-labelledby="building-title">
         <div className="section-heading">
-          <p className="section-label">Current Work</p>
-          <h2 id="building-title">Building product depth around PlanAI and applied AI systems</h2>
+          <p className="section-label">Current Focus</p>
+          <h2 id="building-title">Product development and architectural design</h2>
         </div>
         <div className="narrative-grid">
           {buildingNotes.map((item) => (
