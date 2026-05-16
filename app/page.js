@@ -151,25 +151,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        <aside className="profile-panel" aria-label="Profile summary">
-          <div className="monogram" aria-hidden="true">
-            MD
-          </div>
-          <dl>
-            <div>
-              <dt>Role</dt>
-              <dd>{profile.title}</dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd>{profile.location}</dd>
-            </div>
-            <div>
-              <dt>Primary themes</dt>
-              <dd>AI, automation, software, product strategy</dd>
-            </div>
-          </dl>
-        </aside>
       </section>
 
       <section className="intro" aria-label="Professional summary">

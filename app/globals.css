@@ -40,10 +40,6 @@ a {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
-  gap: 40px;
-  align-items: stretch;
   padding: 48px 40px;
   border: none;
   border-radius: 0;
@@ -145,54 +141,6 @@ h3 {
 .button.primary:hover {
   background: #0d3a2f;
   border-color: #0d3a2f;
-}
-
-.profile-panel {
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 24px;
-  background: #fafbf9;
-  box-shadow: none;
-}
-
-.monogram {
-  display: grid;
-  width: 80px;
-  height: 80px;
-  place-items: center;
-  border: 1.5px solid var(--accent);
-  border-radius: 50%;
-  color: var(--accent-strong);
-  font-size: 1.35rem;
-  font-weight: 800;
-}
-
-dl {
-  margin: 42px 0 0;
-}
-
-dt {
-  margin-bottom: 5px;
-  color: var(--muted);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-dd {
-  margin: 0 0 22px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-dd:last-child {
-  margin-bottom: 0;
 }
 
 .intro {
@@ -420,7 +368,6 @@ dd:last-child {
     padding: 28px 0 56px;
   }
 
-  .hero,
   .grid,
   .split,
   .narrative-grid,
@@ -430,14 +377,6 @@ dd:last-child {
 
   .hero {
     padding: 28px;
-  }
-
-  .profile-panel {
-    gap: 28px;
-  }
-
-  dl {
-    margin-top: 0;
   }
 
   .article-card ul {
