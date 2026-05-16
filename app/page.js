@@ -3,8 +3,9 @@ const profile = {
   title: "AI product builder",
   location: "United States",
   url: "https://mirantdesai01.github.io",
-  github: "https://github.com/mirantdesai01",
+  github: "https://github.com/mirantdesai23",
   medium: "https://medium.com/@desaimirant9",
+  planai: "https://www.planaipro.com",
 };
 
 const focusAreas = [
@@ -147,6 +148,12 @@ export default function HomePage() {
             </a>
             <a className="button" href="#writing">
               Writing
+            </a>
+            <a className="button" href="/stories">
+              Stories
+            </a>
+            <a className="button" href={profile.planai}>
+              PlanAI Pro
             </a>
           </div>
         </div>
