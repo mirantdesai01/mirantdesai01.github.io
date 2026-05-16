@@ -6,11 +6,11 @@ export const metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: "Mirant Desai",
   title: {
-    default: "Mirant Desai | Official Profile, AI Product Builder, Software Developer",
+    default: "Mirant Desai | Official Profile, AI Product Builder",
     template: "%s | Mirant Desai",
   },
   description:
-    "Official website for Mirant Desai, an AI product builder and software developer focused on practical AI, automation, PlanAI, full-stack software, API architecture, and product collaboration systems.",
+    "Official website for Mirant Desai, an AI product builder focused on practical AI, automation, PlanAI, full-stack software, API architecture, and product collaboration systems.",
   alternates: {
     canonical: "/",
   },
@@ -23,7 +23,6 @@ export const metadata = {
     "Mirant Desai official website",
     "Mirant Desai profile",
     "AI product builder",
-    "software developer",
     "automation",
     "full-stack software",
     "business technology",

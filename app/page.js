@@ -1,6 +1,6 @@
 const profile = {
   name: "Mirant Desai",
-  title: "AI product builder and software developer",
+  title: "AI product builder",
   location: "United States",
   url: "https://mirantdesai01.github.io",
   github: "https://github.com/mirantdesai01",
