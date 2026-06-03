@@ -42,6 +42,13 @@ const buildingNotes = [
 
 const articles = [
   {
+    title: "PlanAI for Enterprise: Building the Private-Native Learning Cloud for the AI Enterprise",
+    href: "https://medium.com/@desaimirant9/planai-for-enterprise-building-the-private-native-learning-cloud-for-the-ai-enterprise-bd6f3ce7ef06?postPublishedType=repub",
+    description:
+      "A product and architecture note on PlanAI for Enterprise, focused on private-native learning infrastructure for organizations adopting AI at scale.",
+    tags: ["PlanAI", "Enterprise AI", "Learning cloud"],
+  },
+  {
     title: "The 60-Day Sprint at PlanAI: Building the Product Foundation for EdTech B2C and Enterprise AI",
     href: "https://medium.com/@desaimirant9/the-60-day-sprint-at-planai-building-the-product-foundation-for-ed-tech-b2c-and-enterprise-ai-af37aedc2021",
     description:
