@@ -162,7 +162,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="rounded-full bg-[#d3bd87] px-6 py-3.5 text-sm font-semibold text-[#10202a] transition hover:bg-[#e0cfaa]"
               >
-                Schedule a 30-minute conversation
+                Request a Finance Diagnostic
               </a>
               <Link
                 href="/services"
