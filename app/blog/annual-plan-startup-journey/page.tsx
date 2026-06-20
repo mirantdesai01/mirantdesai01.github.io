@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Your First Year with PlanAI: A 12-Month Startup Roadmap | Mirant Desai",
+  title: "Your First Year with PlanAI: A 12-Month Startup Roadmap",
   description: "A founder's perspective on how PlanAI's annual subscription maps to every critical milestone in your startup's first year—from market validation to go-live integrations.",
+  alternates: {
+    canonical: "/blog/annual-plan-startup-journey/",
+  },
 };
 
 export default function BlogPost() {

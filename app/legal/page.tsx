@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Legal Information",
+  description:
+    "Public legal information and notices provided by Mirant Desai for transparency and context.",
+  alternates: {
+    canonical: "/legal/",
+  },
+};
+
 export default function Legal() {
   return (
     <div className="max-w-4xl mx-auto">

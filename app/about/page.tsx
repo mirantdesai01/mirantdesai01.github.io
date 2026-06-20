@@ -1,81 +1,137 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn about Mirant Desai's work in fractional CFO advisory, strategic finance, entrepreneurship, and AI-enabled business planning.",
+  alternates: {
+    canonical: "/about/",
+  },
+};
+
+const conversationUrl = "https://calendly.com/desaimirant9/30min";
+
 export default function About() {
   return (
-    <div className="max-w-3xl mx-auto">
-      <h1 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">About Me</h1>
+    <div className="mx-auto max-w-5xl py-8 md:py-14">
+      <div className="max-w-3xl">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1f6670]">
+          About
+        </p>
+        <h1 className="mt-5 text-4xl font-semibold tracking-[-0.04em] text-[#10202a] md:text-6xl">
+          Financial perspective informed by entrepreneurship and technology.
+        </h1>
+        <p className="mt-7 text-xl leading-9 text-slate-600">
+          I am Mirant Desai, a fractional CFO and strategic finance advisor. I
+          work with leaders who need stronger financial planning, clearer
+          performance insight, and disciplined analysis for important business
+          decisions.
+        </p>
+      </div>
 
-      <div className="prose max-w-none">
-        <div className="mb-12 p-8 bg-gray-50 rounded-xl border border-gray-200">
-          <h2 className="text-2xl font-semibold mb-4 text-gray-900">Professional Background</h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            I&apos;m Mirant Desai, the Founder and CEO of <a href="https://www.planaipro.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700">PlanAI</a>,
-            an AI-powered enterprise business software platform. PlanAI helps organizations with strategic planning,
-            financial modeling, and business intelligence through advanced artificial intelligence and automation.
+      <div className="mt-16 grid gap-12 border-t border-slate-300 pt-12 lg:grid-cols-[0.72fr_1.28fr]">
+        <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#1f6670]">
+          Professional focus
+        </h2>
+        <div className="space-y-6 text-lg leading-8 text-slate-600">
+          <p>
+            My advisory work covers financial planning and forecasting, cash-flow
+            management, performance reporting, business-model analysis, capital
+            strategy, and investor communications.
           </p>
-          <p className="text-gray-700 leading-relaxed">
-            With a background in technology and entrepreneurship, I&apos;m passionate about building tools that empower
-            businesses to make data-driven decisions and unlock their full potential through intelligent automation.
-          </p>
-        </div>
-
-        <div className="mb-12 p-8 bg-gray-50 rounded-xl border border-gray-200">
-          <h2 className="text-2xl font-semibold mb-4 text-gray-900">What I&apos;m Building</h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            At PlanAI, we&apos;re developing a comprehensive suite of AI-powered business tools including:
-          </p>
-          <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
-            <li>Multi-LLM AI intelligence for strategic insights</li>
-            <li>Business planning and financial modeling tools</li>
-            <li>Market research and competitive analysis platforms</li>
-            <li>Strategic frameworks and OKR planning</li>
-            <li>Project knowledge management and document intelligence</li>
-          </ul>
-        </div>
-
-        <div className="mb-12 p-8 bg-gray-50 rounded-xl border border-gray-200">
-          <h2 className="text-2xl font-semibold mb-4 text-gray-900">Areas of Interest</h2>
-          <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
-            <li>Artificial Intelligence and Machine Learning</li>
-            <li>Business Intelligence and Analytics</li>
-            <li>Entrepreneurship and Startup Growth</li>
-            <li>Product Development and Design</li>
-            <li>Strategic Planning and Financial Modeling</li>
-          </ul>
-        </div>
-
-        <div className="p-8 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl border border-blue-200">
-          <h2 className="text-2xl font-semibold mb-4 text-gray-900">Contact Me</h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            I&apos;m always interested in connecting with fellow entrepreneurs, developers, and business leaders.
-            Feel free to reach out through any of these channels:
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <a 
+          <p>
+            I bring an operator&apos;s perspective to this work. As the founder and
+            CEO of{" "}
+            <a
               href="https://www.planaipro.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+              className="font-medium text-[#1f6670] underline decoration-slate-300 underline-offset-4 transition hover:text-[#10202a]"
             >
-              Visit PlanAI
+              PlanAI
             </a>
-            <a
-              href="https://linkedin.com/in/desaimirant"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-900 rounded-lg transition-colors border border-gray-300"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/mirantdesai01"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-900 rounded-lg transition-colors border border-gray-300"
-            >
-              GitHub
-            </a>
-          </div>
+            , I have worked at the intersection of business planning, financial
+            modeling, enterprise software, and artificial intelligence.
+          </p>
+          <p>
+            This combination helps me evaluate financial questions in their
+            operating context—not as isolated spreadsheet exercises, but as
+            decisions involving customers, products, people, capital, and risk.
+          </p>
         </div>
       </div>
+
+      <div className="mt-16 grid gap-12 border-t border-slate-300 pt-12 lg:grid-cols-[0.72fr_1.28fr]">
+        <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#1f6670]">
+          Areas of work
+        </h2>
+        <div className="grid gap-x-8 gap-y-5 sm:grid-cols-2">
+          {[
+            "Financial planning and forecasting",
+            "Cash flow and capital planning",
+            "Performance reporting and KPIs",
+            "Pricing and unit economics",
+            "Fundraising and investor preparation",
+            "AI and technology business economics",
+          ].map((item) => (
+            <div
+              key={item}
+              className="flex gap-3 border-t border-slate-200 pt-4 font-medium text-[#10202a]"
+            >
+              <span className="text-[#aa8d57]" aria-hidden="true">
+                —
+              </span>
+              {item}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <section className="mt-16 rounded-[28px] bg-[#102b36] px-7 py-10 text-white md:px-12 md:py-14">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d3bd87]">
+          Contact Me
+        </p>
+        <div className="mt-5 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
+          <div>
+            <h2 className="max-w-2xl text-3xl font-semibold tracking-[-0.035em] md:text-4xl">
+              Discuss the financial priorities facing your organization.
+            </h2>
+            <p className="mt-4 max-w-xl leading-7 text-slate-300">
+              Schedule an introductory conversation or connect through one of the
+              professional channels below.
+            </p>
+          </div>
+          <a
+            href={conversationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-[#d3bd87] px-6 py-3.5 text-center text-sm font-semibold text-[#10202a] transition hover:bg-[#e0cfaa]"
+          >
+            Schedule a conversation
+          </a>
+        </div>
+        <div className="mt-9 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/15 pt-6 text-sm text-slate-300">
+          <a href="mailto:mirantdesai@icloud.com" className="transition hover:text-white">
+            mirantdesai@icloud.com
+          </a>
+          <a
+            href="https://linkedin.com/in/desaimirant"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-white"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/mirantdesai01"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-white"
+          >
+            GitHub
+          </a>
+        </div>
+      </section>
     </div>
-  )
+  );
 }

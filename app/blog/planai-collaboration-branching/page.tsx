@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "PlanAI's Collaboration & Branching Product Feature | Mirant Desai",
+  title: "PlanAI's Collaboration & Branching Product Feature",
   description: "How real-time collaboration and intelligent branching transform strategic planning from a siloed exercise into a synchronized team activity.",
+  alternates: {
+    canonical: "/blog/planai-collaboration-branching/",
+  },
 };
 
 export default function BlogPost() {

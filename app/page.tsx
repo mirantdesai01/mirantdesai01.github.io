@@ -3,9 +3,12 @@ import Link from "next/link";
 import { AdvisoryGraphic } from "./components/advisory-graphic";
 
 export const metadata: Metadata = {
-  title: "Fractional CFO & Strategic Finance | Mirant Desai",
+  title: "Fractional CFO & Strategic Finance",
   description:
-    "Fractional CFO and strategic finance support for startups, small businesses, and organizations navigating growth, capital, and complex financial decisions.",
+    "Fractional CFO and strategic finance advisory for startups, small businesses, and organizations managing growth, capital, and financial performance.",
+  alternates: {
+    canonical: "/",
+  },
   other: {
     "public-record-pacermonitor":
       "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.pacermonitor.com/public/case/58059049/Desai_v_Walmart_Inc",
@@ -16,37 +19,94 @@ export const metadata: Metadata = {
 
 const conversationUrl = "https://calendly.com/desaimirant9/30min";
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://mirantdesai01.github.io/#person",
+      name: "Mirant Desai",
+      url: "https://mirantdesai01.github.io",
+      jobTitle: "Fractional CFO and Strategic Finance Advisor",
+      email: "mailto:mirantdesai@icloud.com",
+      telephone: "+1-347-268-4616",
+      sameAs: [
+        "https://linkedin.com/in/desaimirant",
+        "https://github.com/mirantdesai01",
+        "https://www.planaipro.com",
+      ],
+      knowsAbout: [
+        "Financial planning",
+        "Financial forecasting",
+        "Cash flow management",
+        "Capital planning",
+        "Business valuation",
+        "Investor relations",
+        "Artificial intelligence business models",
+      ],
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://mirantdesai01.github.io/#advisory",
+      name: "Mirant Desai Fractional CFO & Strategic Finance",
+      url: "https://mirantdesai01.github.io",
+      description:
+        "Fractional CFO and strategic finance advisory for startups, small businesses, and organizations.",
+      founder: {
+        "@id": "https://mirantdesai01.github.io/#person",
+      },
+      areaServed: "United States",
+      serviceType: [
+        "Fractional CFO services",
+        "Strategic financial planning",
+        "Financial forecasting",
+        "Capital planning",
+        "Fundraising support",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mirantdesai01.github.io/#website",
+      name: "Mirant Desai",
+      url: "https://mirantdesai01.github.io",
+      publisher: {
+        "@id": "https://mirantdesai01.github.io/#person",
+      },
+    },
+  ],
+};
+
 const audiences = [
   {
     number: "01",
     label: "Startups",
-    title: "Build for the next stage",
+    title: "Prepare for sustainable growth",
     description:
-      "Establish a credible financial model, understand runway, prepare for capital conversations, and connect operating decisions to growth.",
-    items: ["Runway and burn", "Fundraising models", "Unit economics"],
+      "Build a credible financial plan, understand cash runway, prepare for capital discussions, and evaluate the economics of growth.",
+    items: ["Cash runway and burn rate", "Fundraising models", "Unit economics"],
   },
   {
     number: "02",
     label: "Small businesses",
-    title: "Improve control and profitability",
+    title: "Strengthen financial control",
     description:
-      "Move from historical reporting to forward-looking management with stronger cash planning, margin visibility, and operating discipline.",
-    items: ["Cash forecasting", "Budget performance", "Pricing and margins"],
+      "Supplement historical reporting with forward-looking cash planning, margin analysis, and disciplined performance management.",
+    items: ["Cash-flow forecasting", "Budget-to-actual analysis", "Pricing and margins"],
   },
   {
     number: "03",
     label: "Organizations",
     title: "Align resources with priorities",
     description:
-      "Give executives and boards a clear view of financial capacity, program economics, risks, and strategic tradeoffs.",
+      "Give executives and boards a clear view of financial capacity, program economics, risk, and the tradeoffs behind resource decisions.",
     items: ["Scenario planning", "Board reporting", "Resource allocation"],
   },
 ];
 
 const capabilities = [
-  "Financial planning, forecasting, and scenario models",
-  "Business model, pricing, and unit-economics analysis",
-  "Cash-flow, runway, and capital planning",
+  "Financial planning, forecasting, and scenario analysis",
+  "Business-model, pricing, and unit-economics analysis",
+  "Cash flow, runway, and capital planning",
   "Management dashboards and board reporting",
   "Fundraising strategy and investor materials",
   "Valuation analysis and transaction support",
@@ -56,23 +116,27 @@ const approach = [
   {
     number: "01",
     title: "Diagnose",
-    text: "Review the financial position, operating model, reporting, and decisions that require better information.",
+    text: "Review the financial position, revenue and cost structure, reporting, and decisions that require better information.",
   },
   {
     number: "02",
     title: "Design",
-    text: "Translate priorities into a focused financial roadmap, practical models, and a decision cadence.",
+    text: "Translate business priorities into a focused financial roadmap, practical models, and a consistent review cadence.",
   },
   {
     number: "03",
     title: "Partner",
-    text: "Execute a defined project or provide ongoing CFO-level support alongside leadership and existing advisors.",
+    text: "Complete a defined project or provide ongoing CFO-level support in coordination with leadership and existing advisors.",
   },
 ];
 
 export default function Home() {
   return (
     <div className="-mx-6 -mt-12 overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <section className="relative bg-[#081722] text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_18%,rgba(43,106,115,0.18),transparent_32%)]" />
         <div className="relative mx-auto grid max-w-7xl gap-14 px-6 py-20 sm:px-8 md:py-28 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:py-32">
@@ -88,8 +152,8 @@ export default function Home() {
               Financial leadership for critical business decisions.
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-8 text-slate-300">
-              Fractional CFO and strategic finance support for leaders managing
-              growth, capital, performance, and financial complexity.
+              Fractional CFO and strategic finance advisory for leaders managing
+              growth, capital allocation, and financial performance.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <a
@@ -119,18 +183,18 @@ export default function Home() {
           </p>
           <div>
             <h2 className="max-w-3xl text-3xl font-semibold leading-tight tracking-[-0.035em] text-[#10202a] md:text-[44px]">
-              When the financial questions outgrow the reporting.
+              When financial reporting alone is no longer enough.
             </h2>
             <div className="mt-7 grid gap-6 text-[17px] leading-8 text-slate-600 md:grid-cols-2">
               <p>
-                Accounting explains what happened. Strategic finance helps
-                leadership decide what should happen next—and what the business
-                can responsibly support.
+                Accounting records and explains historical performance. Strategic
+                finance uses that foundation to evaluate future choices, risks, and
+                financial capacity.
               </p>
               <p>
-                I provide experienced financial analysis, planning, and decision
-                support on a flexible basis, without the overhead of a full-time
-                executive hire.
+                I provide senior-level financial analysis, planning, and decision
+                support on a flexible basis—without the fixed cost of a full-time
+                finance executive.
               </p>
             </div>
           </div>
@@ -145,13 +209,13 @@ export default function Home() {
                 Who I advise
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-[-0.035em] text-[#10202a] md:text-[44px]">
-                Finance support shaped to the organization.
+                Financial guidance tailored to your priorities.
               </h2>
             </div>
             <p className="max-w-2xl text-lg leading-8 text-slate-600 lg:justify-self-end">
-              The scope changes by stage and sector. The objective remains the
-              same: dependable financial information and a clearer basis for
-              action.
+              The scope varies by stage, sector, and available resources. The
+              objective is consistent: reliable financial insight that supports
+              timely, well-informed decisions.
             </p>
           </div>
 
@@ -196,11 +260,11 @@ export default function Home() {
               Advisory capabilities
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-[-0.035em] text-[#10202a] md:text-[44px]">
-              Focused expertise where finance and strategy meet.
+              Practical expertise at the intersection of finance and strategy.
             </h2>
             <p className="mt-6 max-w-md text-lg leading-8 text-slate-600">
-              Engagements can address one immediate priority or establish an
-              ongoing planning and reporting rhythm for leadership.
+              Engagements may address a specific priority or establish an ongoing
+              planning, reporting, and decision-support process.
             </p>
             <Link
               href="/services"
@@ -213,13 +277,12 @@ export default function Home() {
             {capabilities.map((capability, index) => (
               <div
                 key={capability}
-                className="grid grid-cols-[44px_1fr_auto] items-center gap-4 border-b border-slate-200 py-5"
+                className="grid grid-cols-[44px_1fr] items-center gap-4 border-b border-slate-200 py-5"
               >
                 <span className="text-xs text-slate-400">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <p className="font-medium leading-6 text-[#10202a]">{capability}</p>
-                <span className="text-[#aa8d57]" aria-hidden="true">—</span>
               </div>
             ))}
           </div>
@@ -233,20 +296,21 @@ export default function Home() {
               AI & technology companies
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-[-0.035em] md:text-[44px]">
-              A financial strategy for an unfamiliar operating model.
+              Financial planning for the economics of AI.
             </h2>
           </div>
           <div>
             <p className="max-w-2xl text-lg leading-8 text-slate-300">
-              AI businesses often combine extended R&amp;D, evolving infrastructure
-              costs, uncertain adoption curves, and new pricing models. Generic
-              assumptions can conceal the decisions that matter most.
+              AI businesses often face extended R&amp;D periods, changing
+              infrastructure costs, uncertain adoption patterns, and emerging
+              pricing structures. Conventional assumptions may not capture the
+              economics or risks that matter most.
             </p>
             <div className="mt-9 grid gap-x-10 gap-y-5 border-t border-white/15 pt-7 sm:grid-cols-2">
               {[
                 "R&D runway and capital requirements",
                 "AI-specific unit economics",
-                "Revenue and pricing architecture",
+                "Revenue strategy and pricing",
                 "Investor-ready scenarios and valuation",
               ].map((item) => (
                 <div key={item} className="flex gap-3 text-sm font-medium text-slate-200">
@@ -266,7 +330,7 @@ export default function Home() {
               Engagement approach
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-[-0.035em] text-[#10202a] md:text-[44px]">
-              A defined path from question to action.
+              A disciplined path from analysis to action.
             </h2>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
@@ -291,11 +355,11 @@ export default function Home() {
                 Initial conversation
               </p>
               <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-[-0.035em] text-[#10202a] md:text-[44px]">
-                Start with the financial decision in front of you.
+                Begin with the decision that requires greater financial clarity.
               </h2>
               <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
-                A 30-minute conversation can clarify the issue, the information
-                available, and the most useful next step.
+                A 30-minute conversation can clarify the decision, assess the
+                available information, and identify an appropriate next step.
               </p>
             </div>
             <a

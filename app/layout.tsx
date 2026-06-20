@@ -8,13 +8,59 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: "Mirant Desai | Fractional CFO & Strategic Finance",
-    template: "%s",
+    template: "%s | Mirant Desai",
   },
-  description: "Fractional CFO and strategic finance services for startups, small businesses, and organizations.",
+  description: "Fractional CFO and strategic finance advisory for startups, small businesses, and organizations.",
   keywords: ["Mirant Desai", "Fractional CFO", "Strategic Finance", "Financial Planning", "Startups", "Small Business"],
+  authors: [{ name: "Mirant Desai", url: siteUrl }],
+  creator: "Mirant Desai",
+  publisher: "Mirant Desai",
+  category: "Financial Services",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/apple-icon.png",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Mirant Desai",
+    title: "Mirant Desai | Fractional CFO & Strategic Finance",
+    description:
+      "Strategic financial planning and CFO-level decision support for startups, small businesses, and organizations.",
+    images: [
+      {
+        url: "/mirant-desai-social.png",
+        width: 1200,
+        height: 630,
+        alt: "Mirant Desai, Fractional CFO and Strategic Finance Advisor",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mirant Desai | Fractional CFO & Strategic Finance",
+    description:
+      "Strategic financial planning and CFO-level decision support for startups, small businesses, and organizations.",
+    images: ["/mirant-desai-social.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   verification: {
     google: "wu2Rg7sElRUMCJdfsQN8aoiVRF2HtPFrtXLdUHJL2hM"
-  }
+  },
 };
 
 export default function RootLayout({

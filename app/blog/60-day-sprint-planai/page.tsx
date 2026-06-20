@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The 60-Day Sprint at PlanAI: Building the Product Foundation for EdTech B2C and Enterprise AI | Mirant Desai",
-  description: "How PlanAI&apos;s focused 60-day sprint established the foundational product architecture for serving both B2C education and enterprise AI applications.",
+  title: "The 60-Day Sprint at PlanAI",
+  description: "How PlanAI's focused 60-day sprint established the product foundation for education and enterprise AI applications.",
+  alternates: {
+    canonical: "/blog/60-day-sprint-planai/",
+  },
 };
 
 export default function BlogPost() {

@@ -1,4 +1,14 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Insights',
+  description:
+    'Articles by Mirant Desai on business strategy, financial planning, entrepreneurship, AI, and product development.',
+  alternates: {
+    canonical: '/blog/',
+  },
+}
 
 interface BlogPost {
   slug: string
@@ -14,7 +24,7 @@ export default function Blog() {
     {
       slug: '60-day-sprint-planai',
       title: 'The 60-Day Sprint at PlanAI: Building the Product Foundation for EdTech B2C and Enterprise AI',
-      excerpt: "How PlanAI's focused 60-day sprint established the foundational product architecture for serving both B2C education and enterprise AI applications.",
+      excerpt: "A review of the product priorities and architectural decisions behind PlanAI's 60-day development sprint for education and enterprise applications.",
       date: 'April 26, 2026',
       readTime: 5,
       tags: ['PlanAI', 'Product', 'Strategy', 'Development']
@@ -22,7 +32,7 @@ export default function Blog() {
     {
       slug: 'annual-plan-startup-journey',
       title: 'Your First Year with PlanAI: A 12-Month Startup Roadmap',
-      excerpt: "A founder's perspective on how PlanAI's annual subscription maps to every critical milestone in your startup's first year—from market validation to go-live integrations.",
+      excerpt: "A structured 12-month roadmap for moving from market validation and planning to operational readiness and product integration.",
       date: 'March 30, 2026',
       readTime: 5,
       tags: ['PlanAI', 'Startup', 'Product', 'Strategy']
@@ -30,7 +40,7 @@ export default function Blog() {
     {
       slug: 'planai-collaboration-branching',
       title: "PlanAI's Collaboration & Branching Product Feature",
-      excerpt: "How real-time collaboration and intelligent branching transform strategic planning from a siloed exercise into a synchronized team activity.",
+      excerpt: "An examination of how collaboration and branching can help teams evaluate alternatives while maintaining structure and continuity.",
       date: 'March 29, 2026',
       readTime: 2,
       tags: ['PlanAI', 'Product', 'Collaboration', 'Strategic Planning']
@@ -39,9 +49,10 @@ export default function Blog() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Blog</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Insights</h1>
       <p className="text-xl text-gray-700 mb-12">
-        Technical articles, insights, and thoughts on AI, entrepreneurship, and building products
+        Articles on business strategy, financial planning, entrepreneurship, AI,
+        and product development.
       </p>
 
       {posts.length > 0 ? (
@@ -75,9 +86,7 @@ export default function Blog() {
       ) : (
         <div className="p-12 bg-gray-50 rounded-xl border border-gray-200 text-center">
           <p className="text-gray-600 text-lg mb-2">No articles yet</p>
-          <p className="text-gray-500">
-            Stay tuned for technical deep dives, product insights, and more!
-          </p>
+            <p className="text-gray-500">New articles will be published here.</p>
         </div>
       )}
     </div>
