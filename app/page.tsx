@@ -183,7 +183,7 @@ export default function Home() {
           </p>
           <div>
             <h2 className="max-w-3xl text-3xl font-semibold leading-tight tracking-[-0.035em] text-[#10202a] md:text-[44px]">
-              Senior financial leadership aligned with the needs of the business.
+              Senior financial leadership aligned with the business requirements.
             </h2>
             <div className="mt-7 grid gap-6 text-[17px] leading-8 text-slate-600 md:grid-cols-2">
               <p>
