@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export const dynamic = 'force-static'
 
-const siteUrl = 'https://mirantdesai23.github.io'
+const siteUrl = 'https://mirantdesai01.github.io'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -10,6 +10,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteUrl}/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    {
+      url: `${siteUrl}/services/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
       priority: 1.0,
     },
     {

@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
-const siteUrl = "https://mirantdesai23.github.io";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
+const siteUrl = "https://mirantdesai01.github.io";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Mirant Desai | Founder & CEO at PlanAI",
-  description: "Personal website and blog of Mirant Desai - Founder of PlanAI, building AI-powered business intelligence tools",
-  keywords: ["Mirant Desai", "PlanAI", "AI", "Business Intelligence", "Entrepreneurship", "Tech Blog"],
+  title: {
+    default: "Mirant Desai | Fractional CFO & Strategic Finance",
+    template: "%s",
+  },
+  description: "Fractional CFO and strategic finance services for startups, small businesses, and organizations.",
+  keywords: ["Mirant Desai", "Fractional CFO", "Strategic Finance", "Financial Planning", "Startups", "Small Business"],
   verification: {
     google: "wu2Rg7sElRUMCJdfsQN8aoiVRF2HtPFrtXLdUHJL2hM"
   }
@@ -31,41 +28,72 @@ export default function RootLayout({
         <meta name="google-site-verification" content="HdVMGlNyP7A1mMCWVjwsKW6h8NzivjsuACza31OX3Kc" />
         <link rel="related" href="https://caseinfo.arcourts.gov/opad/case/CV-25-739" />
       </head>
-      <body className={`${inter.variable} font-sans antialiased bg-white text-gray-900 min-h-screen`}>
+      <body className="min-h-screen bg-white font-sans text-slate-900 antialiased">
         <div className="flex flex-col min-h-screen">
           {/* Header */}
-          <header className="border-b border-gray-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50">
-            <nav className="container mx-auto px-6 py-4">
+          <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl">
+            <nav className="mx-auto max-w-7xl px-5 py-3.5 sm:px-8">
               <div className="flex items-center justify-between">
-                <Link href="/" className="text-xl font-bold hover:text-blue-600 transition-colors">
-                  Mirant Desai
+                <Link href="/" className="group flex items-center gap-3.5">
+                  <span className="grid h-10 w-10 place-items-center rounded-full border border-slate-300 text-[11px] font-bold tracking-[0.08em] text-slate-900 transition group-hover:border-teal-700 group-hover:text-teal-800">
+                    MD
+                  </span>
+                  <span className="leading-tight">
+                    <span className="display-font block text-[17px] font-semibold tracking-[-0.01em] text-slate-950">
+                      Mirant Desai
+                    </span>
+                    <span className="hidden text-[11px] font-medium tracking-[0.01em] text-slate-500 sm:block">
+                      Fractional CFO & Strategic Finance
+                    </span>
+                  </span>
                 </Link>
-                <div className="flex gap-6">
-                  <Link href="/blog" className="hover:text-blue-600 transition-colors">
-                    Blog
+                <div className="flex items-center gap-4 text-[13px] font-semibold text-slate-700 sm:gap-7">
+                  <Link href="/services" className="transition-colors hover:text-teal-800">
+                    Services
                   </Link>
-                  <Link href="/about" className="hover:text-blue-600 transition-colors">
+                  <Link href="/about" className="hidden transition-colors hover:text-teal-800 sm:block">
                     About
                   </Link>
-                  <Link href="/legal" className="hover:text-blue-600 transition-colors">
-                    Legal
+                  <Link href="/blog" className="hidden transition-colors hover:text-teal-800 md:block">
+                    Insights
                   </Link>
+                  <a
+                    href="https://calendly.com/desaimirant9/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full bg-[#102b36] px-4 py-2.5 text-white transition hover:bg-[#1f6670]"
+                  >
+                    Schedule a call
+                  </a>
                 </div>
               </div>
             </nav>
           </header>
 
           {/* Main Content */}
-          <main className="flex-1 container mx-auto px-6 py-12">
+          <main className="flex-1 px-6 py-12">
             {children}
           </main>
 
           {/* Footer */}
-          <footer className="border-t border-gray-200 mt-auto">
-            <div className="container mx-auto px-6 py-8">
-              <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
-                <p>&copy; {new Date().getFullYear()} Mirant Desai. All rights reserved.</p>
-                <div className="flex gap-6">
+          <footer className="mt-auto border-t border-slate-200 bg-[#f6f4ef]">
+            <div className="mx-auto max-w-7xl px-6 py-10">
+              <div className="flex flex-col justify-between gap-6 text-sm text-slate-600 md:flex-row md:items-end">
+                <div>
+                  <p className="display-font text-lg font-semibold text-slate-950">Mirant Desai</p>
+                  <p className="mt-1">Fractional CFO & Strategic Finance</p>
+                  <p className="mt-4">&copy; {new Date().getFullYear()} Mirant Desai. All rights reserved.</p>
+                </div>
+                <div className="flex flex-wrap gap-6">
+                  <Link href="/services" className="transition-colors hover:text-slate-950">
+                    Services
+                  </Link>
+                  <Link href="/blog" className="transition-colors hover:text-slate-950">
+                    Insights
+                  </Link>
+                  <Link href="/legal" className="transition-colors hover:text-slate-950">
+                    Legal
+                  </Link>
                   <a
                     href="https://www.planaipro.com"
                     target="_blank"
@@ -83,7 +111,7 @@ export default function RootLayout({
                     LinkedIn
                   </a>
                   <a
-                    href="https://github.com/mirantdesai23"
+                    href="https://github.com/mirantdesai01"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-gray-900 transition-colors"

@@ -43,7 +43,7 @@ export default function About() {
         </div>
 
         <div className="p-8 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl border border-blue-200">
-          <h2 className="text-2xl font-semibold mb-4 text-gray-900">Get in Touch</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-gray-900">Contact Me</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             I&apos;m always interested in connecting with fellow entrepreneurs, developers, and business leaders.
             Feel free to reach out through any of these channels:
@@ -66,7 +66,7 @@ export default function About() {
               LinkedIn
             </a>
             <a
-              href="https://github.com/mirantdesai23"
+              href="https://github.com/mirantdesai01"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-900 rounded-lg transition-colors border border-gray-300"
