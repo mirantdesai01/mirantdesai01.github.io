@@ -97,8 +97,9 @@ export default function About() {
               Discuss the financial priorities facing your organization.
             </h2>
             <p className="mt-4 max-w-xl leading-7 text-slate-300">
-              Schedule an introductory conversation or connect through one of the
-              professional channels below.
+              For fractional CFO engagements, strategic finance advisory, or
+              related professional inquiries, schedule an introductory
+              conversation or use the contact details below.
             </p>
           </div>
           <a
