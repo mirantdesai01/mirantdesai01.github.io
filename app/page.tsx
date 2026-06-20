@@ -85,7 +85,7 @@ export default function Home() {
               Mirant Desai
             </p>
             <h1 className="mt-4 max-w-2xl text-[42px] font-semibold leading-[1.03] tracking-[-0.045em] sm:text-6xl lg:text-[68px]">
-              Financial leadership for consequential decisions.
+              Financial leadership for critical business decisions.
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-8 text-slate-300">
               Fractional CFO and strategic finance support for leaders managing
