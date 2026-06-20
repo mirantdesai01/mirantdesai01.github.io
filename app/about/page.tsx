@@ -94,12 +94,12 @@ export default function About() {
         <div className="mt-5 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
           <div>
             <h2 className="max-w-2xl text-3xl font-semibold tracking-[-0.035em] md:text-4xl">
-             Let's talk about your financial priorities
+              Let&apos;s talk about your financial priorities.
             </h2>
             <p className="mt-4 max-w-xl leading-7 text-slate-300">
-              For fractional CFO engagements, strategic finance advisory, or
-              related professional inquiries, schedule an introductory
-              conversation or use the contact details below.
+              For fractional CFO services or strategic finance advisory, schedule
+              an introductory call to discuss your current priorities, the
+              decisions ahead, and the support your organization may require.
             </p>
           </div>
           <a
@@ -108,7 +108,7 @@ export default function About() {
             rel="noopener noreferrer"
             className="rounded-full bg-[#d3bd87] px-6 py-3.5 text-center text-sm font-semibold text-[#10202a] transition hover:bg-[#e0cfaa]"
           >
-            Schedule a conversation
+            Schedule an introductory call
           </a>
         </div>
         <div className="mt-9 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/15 pt-6 text-sm text-slate-300">
@@ -123,13 +123,8 @@ export default function About() {
           >
             LinkedIn
           </a>
-          <a
-            href="https://github.com/mirantdesai01"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition hover:text-white"
-          >
-            GitHub
+          <a href="tel:+13472684616" className="transition hover:text-white">
+            +1 347-268-4616
           </a>
         </div>
       </section>

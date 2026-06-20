@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
+import { EB_Garamond } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
 const siteUrl = "https://mirantdesai01.github.io";
+
+const garamond = EB_Garamond({
+  subsets: ["latin"],
+  variable: "--font-garamond",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -74,7 +81,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="HdVMGlNyP7A1mMCWVjwsKW6h8NzivjsuACza31OX3Kc" />
         <link rel="related" href="https://caseinfo.arcourts.gov/opad/case/CV-25-739" />
       </head>
-      <body className="min-h-screen bg-white font-sans text-slate-900 antialiased">
+      <body className={`${garamond.variable} min-h-screen bg-white text-slate-900 antialiased`}>
         <div className="flex flex-col min-h-screen">
           {/* Header */}
           <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl">
