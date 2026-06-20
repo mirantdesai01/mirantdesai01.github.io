@@ -179,22 +179,23 @@ export default function Home() {
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 sm:px-8 md:py-24 lg:grid-cols-[0.72fr_1.28fr]">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1f6670]">
-            The role of a fractional CFO
+            Fractional CFO advisory
           </p>
           <div>
             <h2 className="max-w-3xl text-3xl font-semibold leading-tight tracking-[-0.035em] text-[#10202a] md:text-[44px]">
-              When financial reporting alone is no longer enough.
+              Senior financial leadership aligned with the needs of the business.
             </h2>
             <div className="mt-7 grid gap-6 text-[17px] leading-8 text-slate-600 md:grid-cols-2">
               <p>
-                Accounting records and explains historical performance. Strategic
-                finance uses that foundation to evaluate future choices, risks, and
-                financial capacity.
+                Reliable accounting provides a clear view of historical
+                performance. Fractional CFO advisory builds on that foundation
+                with forward-looking planning, scenario analysis, and disciplined
+                evaluation of financial tradeoffs.
               </p>
               <p>
-                I provide senior-level financial analysis, planning, and decision
-                support on a flexible basis—without the fixed cost of a full-time
-                finance executive.
+                I provide executive-level financial leadership and decision
+                support through a flexible engagement model, working alongside
+                management teams and existing advisors as priorities evolve.
               </p>
             </div>
           </div>
