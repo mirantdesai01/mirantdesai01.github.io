@@ -94,7 +94,7 @@ export default function About() {
         <div className="mt-5 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
           <div>
             <h2 className="max-w-2xl text-3xl font-semibold tracking-[-0.035em] md:text-4xl">
-              Discuss the financial priorities facing your organization.
+             Let's talk about your financial priorities
             </h2>
             <p className="mt-4 max-w-xl leading-7 text-slate-300">
               For fractional CFO engagements, strategic finance advisory, or
