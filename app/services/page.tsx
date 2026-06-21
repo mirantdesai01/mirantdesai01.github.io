@@ -101,6 +101,27 @@ const sectors = [
   },
 ];
 
+const engagements = [
+  {
+    number: "01",
+    title: "Finance Diagnostic",
+    description: "A fast, paid entry point.",
+    details: "Includes a 60–90 minute intake.",
+  },
+  {
+    number: "02",
+    title: "CFO Launch Sprint",
+    description: "A focused 2–4 week project.",
+    details: "Designed for a defined financial priority or decision.",
+  },
+  {
+    number: "03",
+    title: "Monthly Fractional CFO",
+    description: "Ongoing CFO-level support on a monthly retainer.",
+    details: "Scope and cadence are tailored to the company’s needs.",
+  },
+];
+
 export default function ServicesPage() {
   return (
     <div className="-mx-6 -mt-12 overflow-hidden">
@@ -167,6 +188,49 @@ export default function ServicesPage() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-[#102b36] text-white">
+        <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 md:py-24">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d3bd87]">
+              Ways to work together
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.035em] md:text-[44px]">
+              Start with the level of support your business needs now.
+            </h2>
+          </div>
+
+          <div className="mt-12 grid gap-px overflow-hidden rounded-[24px] bg-white/15 lg:grid-cols-3">
+            {engagements.map((engagement) => (
+              <article
+                key={engagement.number}
+                className="flex aspect-square flex-col bg-[#102b36] p-7 md:p-8"
+              >
+                <span className="text-xs font-semibold text-[#d3bd87]">
+                  {engagement.number}
+                </span>
+                <h3 className="mt-7 text-2xl font-semibold tracking-[-0.025em]">
+                  {engagement.title}
+                </h3>
+                <p className="mt-7 leading-7 text-slate-200">
+                  {engagement.description}
+                </p>
+                <p className="mt-auto border-t border-white/15 pt-6 text-sm leading-6 text-slate-300">
+                  {engagement.details}
+                </p>
+              </article>
+            ))}
+          </div>
+
+          <a
+            href="/fractional-cfo-services-mirant.pdf"
+            download
+            className="mt-8 inline-flex rounded-full bg-[#d3bd87] px-6 py-3.5 text-sm font-semibold text-[#10202a] transition hover:bg-[#e0cfaa]"
+          >
+            Download Fractional CFO services
+          </a>
         </div>
       </section>
 
