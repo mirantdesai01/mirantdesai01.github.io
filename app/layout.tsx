@@ -113,6 +113,9 @@ export default function RootLayout({
                   <Link href="/blog" className="hidden transition-colors hover:text-teal-800 md:block">
                     Insights
                   </Link>
+                  <Link href="/tools" className="transition-colors hover:text-teal-800">
+                    Tools
+                  </Link>
                   <a
                     href="https://calendly.com/desaimirant9/30min"
                     target="_blank"
@@ -146,6 +149,9 @@ export default function RootLayout({
                   </Link>
                   <Link href="/blog" className="transition-colors hover:text-slate-950">
                     Insights
+                  </Link>
+                  <Link href="/tools" className="transition-colors hover:text-slate-950">
+                    Tools
                   </Link>
                   <Link href="/legal" className="transition-colors hover:text-slate-950">
                     Legal
