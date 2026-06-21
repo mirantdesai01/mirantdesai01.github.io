@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactForm from "./contact-form";
 
 export const metadata: Metadata = {
   title: "About",
@@ -127,6 +128,7 @@ export default function About() {
             +1 347-268-4616
           </a>
         </div>
+        <ContactForm />
       </section>
     </div>
   );
