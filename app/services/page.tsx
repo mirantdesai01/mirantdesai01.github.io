@@ -112,13 +112,13 @@ const engagements = [
     number: "02",
     title: "CFO Launch Sprint",
     description: "A focused 2–4 week project.",
-    details: "Designed for a defined financial priority or decision.",
+    details: "Designed for a defined financial priority or decision. Clients get free access to PlanAI",
   },
   {
     number: "03",
     title: "Monthly Fractional CFO",
     description: "Ongoing CFO-level support on a monthly retainer.",
-    details: "Scope and cadence are tailored to the company’s needs.",
+    details: "Scope and cadence are tailored to the company’s needs. Clients get free access to PlanAI",
   },
 ];
 
