@@ -28,7 +28,8 @@ export default function About() {
             I am Mirant Desai, a fractional CFO and strategic finance advisor. I
             work with leaders who need stronger financial planning, clearer
             performance insight, and disciplined analysis for important business
-            decisions.
+            decisions. My focus is bringing world-class business advisory
+            experience to small businesses and startups.
           </p>
         </div>
         <Image
