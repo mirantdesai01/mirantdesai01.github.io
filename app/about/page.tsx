@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import ContactForm from "./contact-form";
 
 export const metadata: Metadata = {
@@ -15,19 +16,29 @@ const conversationUrl = "https://calendly.com/desaimirant9/30min";
 export default function About() {
   return (
     <div className="mx-auto max-w-5xl py-8 md:py-14">
-      <div className="max-w-3xl">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1f6670]">
-          About
-        </p>
-        <h1 className="mt-5 text-4xl font-semibold tracking-[-0.04em] text-[#10202a] md:text-6xl">
-          Financial perspective informed by entrepreneurship and technology.
-        </h1>
-        <p className="mt-7 text-xl leading-9 text-slate-600">
-          I am Mirant Desai, a fractional CFO and strategic finance advisor. I
-          work with leaders who need stronger financial planning, clearer
-          performance insight, and disciplined analysis for important business
-          decisions.
-        </p>
+      <div className="grid items-center gap-10 lg:grid-cols-[1fr_28rem] lg:gap-14">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1f6670]">
+            About
+          </p>
+          <h1 className="mt-5 text-4xl font-semibold tracking-[-0.04em] text-[#10202a] md:text-6xl">
+            Financial perspective informed by entrepreneurship and technology.
+          </h1>
+          <p className="mt-7 text-xl leading-9 text-slate-600">
+            I am Mirant Desai, a fractional CFO and strategic finance advisor. I
+            work with leaders who need stronger financial planning, clearer
+            performance insight, and disciplined analysis for important business
+            decisions.
+          </p>
+        </div>
+        <Image
+          src="/Mirant.jpg"
+          alt="Mirant Desai"
+          width={1024}
+          height={1024}
+          priority
+          className="mx-auto w-full max-w-md rounded-[24px] object-cover shadow-sm lg:mx-0"
+        />
       </div>
 
       <div className="mt-16 grid gap-12 border-t border-slate-300 pt-12 lg:grid-cols-[0.72fr_1.28fr]">
