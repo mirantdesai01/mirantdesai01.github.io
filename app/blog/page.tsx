@@ -63,8 +63,8 @@ export default function Blog() {
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300">
             Practical articles on fractional CFO advisory, financial planning,
-            forecasting, profitability, capital decisions, and the industry-specific
-            questions SMB leaders face.
+            forecasting, profitability, capital decisions, and industry-specific
+            financial priorities for growing businesses.
           </p>
         </div>
       </section>
