@@ -3,9 +3,10 @@ import { AdvisoryArticle, conversationUrl } from "./advisory-articles";
 
 type AdvisoryArticlePageProps = {
   article: AdvisoryArticle;
+  children?: React.ReactNode;
 };
 
-export function AdvisoryArticlePage({ article }: AdvisoryArticlePageProps) {
+export function AdvisoryArticlePage({ article, children }: AdvisoryArticlePageProps) {
   return (
     <article className="-mx-6 -mt-12 overflow-hidden">
       <section className="border-b border-white/10 bg-[#081722] text-white">
@@ -68,6 +69,8 @@ export function AdvisoryArticlePage({ article }: AdvisoryArticlePageProps) {
             </section>
           ))}
         </div>
+
+        {children}
 
         <div className="mt-16 border-y border-slate-300 py-10">
           <p className="text-xl leading-8 text-slate-800">{article.closing}</p>

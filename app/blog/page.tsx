@@ -21,6 +21,12 @@ interface BlogPost {
 }
 
 export default function Blog() {
+  const perspectiveOrder = [
+    'better-forecasting-for-owner-decisions',
+    'when-bookkeeping-is-not-enough',
+    'fractional-cfo-first-90-days',
+  ]
+
   const legacyPosts: BlogPost[] = [
     {
       slug: '60-day-sprint-planai',
@@ -48,7 +54,12 @@ export default function Blog() {
     }
   ]
 
-  const perspectives = advisoryArticles.filter((post) => post.section === 'Perspectives')
+  const perspectives = advisoryArticles
+    .filter((post) => post.section === 'Perspectives')
+    .sort(
+      (a, b) =>
+        perspectiveOrder.indexOf(a.slug) - perspectiveOrder.indexOf(b.slug)
+    )
   const industryInsights = advisoryArticles.filter((post) => post.section === 'Industry Insights')
 
   return (
