@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { advisoryArticles } from './blog/advisory-articles'
 
 export const dynamic = 'force-static'
 
@@ -54,6 +55,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 1.0,
     },
+    ...advisoryArticles.map((article) => ({
+      url: `${siteUrl}/blog/${article.slug}/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 1.0,
+    })),
     {
       url: `${siteUrl}/legal/`,
       lastModified: new Date(),
