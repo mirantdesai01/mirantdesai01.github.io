@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import type { Metadata } from 'next'
+import { ArticleCarousel } from './article-carousel'
 import { advisoryArticles } from './advisory-articles'
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ interface BlogPost {
 export default function Blog() {
   const perspectiveOrder = [
     'better-forecasting-for-owner-decisions',
+    'signs-you-need-fractional-cfo-support',
     'when-bookkeeping-is-not-enough',
     'fractional-cfo-first-90-days',
   ]
@@ -61,6 +62,11 @@ export default function Blog() {
         perspectiveOrder.indexOf(a.slug) - perspectiveOrder.indexOf(b.slug)
     )
   const industryInsights = advisoryArticles.filter((post) => post.section === 'Industry Insights')
+  const archiveItems = legacyPosts.map((post) => ({
+    ...post,
+    section: 'Archive',
+    description: post.excerpt,
+  }))
 
   return (
     <div className="-mx-6 -mt-12 overflow-hidden">
@@ -97,29 +103,7 @@ export default function Blog() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {perspectives.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="group flex min-h-[360px] flex-col border-t border-slate-300 pt-7 transition hover:border-[#1f6670]"
-            >
-              <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.16em] text-[#1f6670]">
-                <span>{post.section}</span>
-                <span>{post.readTime} min</span>
-              </div>
-              <h3 className="mt-8 text-2xl font-semibold tracking-[-0.025em] text-[#10202a] transition-colors group-hover:text-[#1f6670]">
-                {post.title}
-              </h3>
-              <p className="mt-5 leading-7 text-slate-600">{post.description}</p>
-              <div className="mt-auto flex flex-wrap items-center gap-2 pt-8 text-sm text-slate-500">
-                <time>{post.date}</time>
-                <span aria-hidden="true">•</span>
-                <span>Read article</span>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <ArticleCarousel items={perspectives} />
       </section>
 
       <section className="border-y border-slate-200 bg-[#f6f4ef]">
@@ -139,29 +123,7 @@ export default function Blog() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {industryInsights.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="group flex min-h-[360px] flex-col border-t border-slate-300 pt-7 transition hover:border-[#1f6670]"
-              >
-                <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.16em] text-[#1f6670]">
-                  <span>{post.section}</span>
-                  <span>{post.readTime} min</span>
-                </div>
-                <h3 className="mt-8 text-2xl font-semibold tracking-[-0.025em] text-[#10202a] transition-colors group-hover:text-[#1f6670]">
-                  {post.title}
-                </h3>
-                <p className="mt-5 leading-7 text-slate-600">{post.description}</p>
-                <div className="mt-auto flex flex-wrap items-center gap-2 pt-8 text-sm text-slate-500">
-                  <time>{post.date}</time>
-                  <span aria-hidden="true">•</span>
-                  <span>Read article</span>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <ArticleCarousel items={industryInsights} />
         </div>
       </section>
 
@@ -174,24 +136,7 @@ export default function Blog() {
             Additional writing.
           </h2>
         </div>
-        <div className="mt-10 grid gap-5">
-          {legacyPosts.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="group border-t border-slate-300 py-6 transition hover:border-[#1f6670]"
-            >
-              <h3 className="text-2xl font-semibold tracking-[-0.025em] text-[#10202a] transition-colors group-hover:text-[#1f6670]">
-                {post.title}
-              </h3>
-              <p className="mt-3 leading-7 text-slate-600">{post.excerpt}</p>
-              <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-slate-500">
-                <time>{post.date}</time>
-                {post.readTime && <span>{post.readTime} min read</span>}
-              </div>
-            </Link>
-          ))}
-        </div>
+        <ArticleCarousel items={archiveItems} />
       </section>
     </div>
   )

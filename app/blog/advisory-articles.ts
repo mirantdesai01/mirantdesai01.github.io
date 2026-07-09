@@ -119,6 +119,64 @@ export const advisoryArticles: AdvisoryArticle[] = [
       "A strong first 90 days should leave leadership with sharper financial visibility and a practical cadence for making better decisions.",
   },
   {
+    slug: "signs-you-need-fractional-cfo-support",
+    section: "Perspectives",
+    title: "Five Signs Your Business Is Ready for Fractional CFO Support",
+    description:
+      "How owners can recognize when the business needs CFO-level planning, reporting, and decision support.",
+    date: "July 9, 2026",
+    readTime: 4,
+    tags: ["Fractional CFO", "Growth Planning", "Decision Support"],
+    intro: [
+      "Many businesses do not need a full-time CFO. They do, however, reach moments when financial decisions become too important to manage with basic reports, intuition, or one-off spreadsheet work.",
+      "The question is not whether the company has accounting support. The question is whether leadership has the forward-looking financial visibility needed to make confident decisions.",
+    ],
+    sections: [
+      {
+        heading: "1. Cash flow surprises are becoming more frequent",
+        paragraphs: [
+          "If cash availability changes faster than leadership expects, the business likely needs a more disciplined forecasting process. A fractional CFO can help connect revenue timing, payroll, vendor payments, taxes, debt service, and working capital into a clearer cash view.",
+          "The goal is to identify pressure points early enough to make thoughtful decisions rather than urgent ones.",
+        ],
+      },
+      {
+        heading: "2. Growth decisions lack a financial model",
+        paragraphs: [
+          "Hiring, opening a new location, investing in equipment, changing prices, or launching a new service should be supported by a clear view of expected return, required cash, risk, and timing.",
+          "Fractional CFO support helps leadership test those decisions before committing resources.",
+        ],
+        bullets: [
+          "Hiring plans",
+          "Pricing changes",
+          "New locations or service lines",
+          "Debt or equipment financing",
+          "Major vendor or inventory commitments",
+        ],
+      },
+      {
+        heading: "3. Reports explain the past but not the next move",
+        paragraphs: [
+          "Financial statements are necessary, but they are not always sufficient. Leadership also needs dashboards, variance analysis, scenario planning, and clear management narratives that connect performance to decisions.",
+          "A fractional CFO can help convert monthly reporting into a useful operating rhythm.",
+        ],
+      },
+      {
+        heading: "4. Stakeholder conversations require better preparation",
+        paragraphs: [
+          "Lenders, investors, boards, buyers, partners, and senior hires often expect a clear financial story. If those conversations are approaching, the company may need better forecasts, assumptions, KPIs, and supporting analysis.",
+        ],
+      },
+      {
+        heading: "5. The owner is carrying too much of the finance function",
+        paragraphs: [
+          "When the owner is the only person connecting financial data to strategic decisions, finance can become a bottleneck. Fractional CFO support creates a more reliable decision process while preserving flexibility.",
+        ],
+      },
+    ],
+    closing:
+      "If these signs are familiar, fractional CFO advisory can provide senior financial guidance at a level of support that fits the company's current stage.",
+  },
+  {
     slug: "better-forecasting-for-owner-decisions",
     section: "Perspectives",
     title: "Better Forecasting Helps Owners Make Better Decisions",
